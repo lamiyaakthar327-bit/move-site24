@@ -98,7 +98,14 @@ a {
 .nav-list {
     list-style: none;
     display: flex;
-    flex-wrap: wrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+    scrollbar-width: none; /* Firefox */
+}
+
+.nav-list::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
 }
 
 .nav-list li a {
@@ -530,9 +537,41 @@ a {
 
 @media (max-width: 480px) {
     .movie-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
     }
     .movie-grid.style-below {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    .overlay-info {
+        padding: 15px 5px 5px;
+    }
+    .overlay-info h3 {
+        font-size: 11px;
+    }
+    .watch-btn-overlay {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+    .green-title {
+        font-size: 11px;
+    }
+    .category {
+        font-size: 9px;
+    }
+    .watch-btn {
+        padding: 4px 10px;
+        font-size: 11px;
+    }
+    .logo {
+        font-size: 2rem;
+    }
+    .logo-hd {
+        font-size: 1.2rem;
+    }
+    .quality-badge, .duration-badge, .rating-badge {
+        font-size: 9px;
+        padding: 2px 4px;
     }
 }
