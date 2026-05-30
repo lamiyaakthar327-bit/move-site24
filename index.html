@@ -3,57 +3,331 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CineStream - Simple Movie Player</title>
-    <meta name="description" content="A simple and beautiful movie site where you can play and download videos by entering a link.">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>UiiU MOVIES HD</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Social Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div class="app-container">
-        <header>
-            <h1 class="logo">Cine<span>Stream</span></h1>
-            <p class="subtitle">Your Personal Movie Hub</p>
-        </header>
-
-        <main>
-            <div class="input-section glass-panel">
-                <h2>Play Any Movie</h2>
-                <p>Paste a direct video link (e.g., .mp4, .webm) below to stream or download.</p>
-                <div class="input-group">
-                    <input type="url" id="videoUrlInput" placeholder="Enter video link here..." autocomplete="off">
-                    <button id="loadBtn" class="primary-btn">Load Movie</button>
-                </div>
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo">
+                <span class="logo-light">UiiU</span> <span class="logo-bold">MOVIES</span> <span class="logo-hd">| HD</span>
             </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Movie">
+            </div>
+        </div>
+    </header>
 
-            <div class="player-section" id="playerSection" style="display: none;">
-                <div class="video-container">
-                    <video id="moviePlayer" controls>
-                        Your browser does not support the video tag.
-                    </video>
+    <nav class="main-nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Connect with us! <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">Quality <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#" class="highlight">Alternate Domains <i class="fas fa-chevron-down"></i></a></li>
+                <li><a href="#">Movie Index</a></li>
+                <li><a href="#">Best Rating</a></li>
+                <li><a href="#">Disclaimer</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Request Movie</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="social-share">
+            <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Sharer</button>
+            <button class="social-btn twitter"><i class="fab fa-twitter"></i> Tweet</button>
+            <button class="social-btn whatsapp"><i class="fab fa-whatsapp"></i></button>
+            <button class="social-btn telegram"><i class="fab fa-telegram-plane"></i></button>
+        </div>
+
+        <div class="notice-bar">
+            p & 1080p movies. Please bookmark and share thus site with your Friends.
+        </div>
+
+        <div class="content-layout">
+            <main class="main-content">
+                <!-- RANDOM MOVIE SECTION -->
+                <section class="movie-section">
+                    <h2 class="section-title">RANDOM MOVIE</h2>
+                    <div class="movie-grid">
+                        <!-- Card 1 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/1.webp" alt="Movie 1">
+                            <span class="quality-badge">Full HD</span>
+                            <div class="overlay-info">
+                                <h3>Mean Amazon Bitches 8 (2018)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/2.webp" alt="Movie 2">
+                            <span class="quality-badge">HD</span>
+                            <div class="overlay-info">
+                                <h3>Brown Sugar Babe Vol. 6 (2023)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/3.webp" alt="Movie 3">
+                            <span class="quality-badge">SD</span>
+                            <div class="overlay-info">
+                                <h3>Bliss: Season 1 (2002)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/4.webp" alt="Movie 4">
+                            <span class="quality-badge">HD</span>
+                            <div class="rating-badge"><i class="fas fa-star"></i> 7.0</div>
+                            <div class="overlay-info">
+                                <h3>Oscura Seduccion (2010)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/5.webp" alt="Movie 5">
+                            <span class="quality-badge">HD</span>
+                            <div class="overlay-info">
+                                <h3>Drip Vol. 2 (2023)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                        <!-- Card 6 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/6.webp" alt="Movie 6">
+                            <span class="quality-badge">HD</span>
+                            <div class="overlay-info">
+                                <h3>Barbie in the Porn World (2023)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                        <!-- Card 7 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/7.webp" alt="Movie 7">
+                            <span class="quality-badge">HD</span>
+                            <div class="overlay-info">
+                                <h3>Bi The End Of The Day (2023)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                        <!-- Card 8 -->
+                        <div class="movie-card style-overlay">
+                            <img src="movie_img/movie%20img/8.webp" alt="Movie 8">
+                            <span class="quality-badge">HD</span>
+                            <div class="rating-badge"><i class="fas fa-star"></i> 5.534</div>
+                            <div class="overlay-info">
+                                <h3>Aria (1987)</h3>
+                            </div>
+                            <a href="#" class="watch-btn-overlay">WATCH MOVIE</a>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- LATEST MOVIE SECTION -->
+                <section class="movie-section">
+                    <h2 class="section-title">LATEST MOVIE</h2>
+                    <div class="movie-grid style-below">
+                        <!-- Card 9 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/9.webp" alt="Movie 9">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 108 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">Assaholic 4 (2026)</h3>
+                                <p class="category">Uncategorized, USA</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                        <!-- Card 10 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/11.webp" alt="Movie 11">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 136 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">In The Room: With My Hotwife 2 (2026)</h3>
+                                <p class="category">Uncategorized, USA</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                        <!-- Card 11 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/12.webp" alt="Movie 12">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 146 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">Girl Cum V14 (2026)</h3>
+                                <p class="category">Uncategorized, USA</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                        <!-- Card 12 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/13.webp" alt="Movie 13">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 95 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">Raw Sex Only (2026)</h3>
+                                <p class="category">Uncategorized, France</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                        <!-- Card 13 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/14.webp" alt="Movie 14">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 83 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">Titty Attack 17 (2026)</h3>
+                                <p class="category">Uncategorized, USA</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second row for LATEST MOVIE to match image 3 -->
+                    <div class="movie-grid style-below mt-15">
+                        <!-- Card 14 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/15.webp" alt="Movie 15">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 130 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">Hot Babes (2022)</h3>
+                                <p class="category">Uncategorized, USA</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                        <!-- Card 15 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/16.webp" alt="Movie 16">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 155 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">Girls Sharing Secrets (2023)</h3>
+                                <p class="category">Uncategorized, USA</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                        <!-- Card 16 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/17.webp" alt="Movie 17">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 166 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">Broken Vows 15 (2026)</h3>
+                                <p class="category">Uncategorized, USA</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                        <!-- Card 17 -->
+                        <div class="movie-card style-details-below">
+                            <div class="img-wrapper">
+                                <img src="movie_img/movie%20img/18.webp" alt="Movie 18">
+                                <span class="quality-badge">HD</span>
+                                <span class="duration-badge"><i class="far fa-clock"></i> 174 min</span>
+                            </div>
+                            <div class="card-details">
+                                <h3 class="green-title">ZZ Unscripted 5 (2026)</h3>
+                                <p class="category">Uncategorized, Canada</p>
+                                <a href="#" class="watch-btn">WATCH</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <div class="pagination">
+                        <a href="#" class="page-link active">1</a>
+                        <a href="#" class="page-link">2</a>
+                        <a href="#" class="page-link">3</a>
+                        <span class="dots">...</span>
+                        <a href="#" class="page-link">363</a>
+                        <a href="#" class="page-link next">&raquo;</a>
+                    </div>
+                </section>
+            </main>
+
+            <aside class="sidebar">
+                <div class="ad-banner">
+                    <!-- Placeholder for Ad banner shown in screenshot 1 right side -->
+                    <img src="movie_img/movie%20img/20.webp" alt="Ad Banner" style="width: 100%; border-radius: 4px;">
                 </div>
                 
-                <div class="actions">
-                    <div class="movie-info">
-                        <h3 id="movieTitle">Custom Movie Stream</h3>
-                        <p>Ready to watch</p>
-                    </div>
-                    <a id="downloadBtn" href="#" class="download-btn" download>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                            <polyline points="7 10 12 15 17 10"></polyline>
-                            <line x1="12" y1="15" x2="12" y2="3"></line>
-                        </svg>
-                        Download Movie
-                    </a>
+                <div class="sidebar-search">
+                    <input type="text" placeholder="Enter Movie">
+                    <select>
+                        <option>All Type</option>
+                    </select>
                 </div>
-            </div>
-        </main>
-        
-        <footer>
-            <p>&copy; 2026 CineStream. Beautifully crafted for you.</p>
-        </footer>
-    </div>
 
-    <script src="script.js"></script>
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">WEEKLY TOP MOVIES</h3>
+                    <ul class="top-movies-list">
+                        <li>
+                            <img src="movie_img/movie%20img/21.webp" alt="Top 1">
+                            <div class="top-info">
+                                <a href="#" class="top-title">Titty Attack 17 (2026)</a>
+                                <span class="top-meta">Uncategorized,<br>6,610 views</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="movie_img/movie%20img/22.webp" alt="Top 2">
+                            <div class="top-info">
+                                <a href="#" class="top-title">PAWG: Phat Ass White Girls 13 (2026)</a>
+                                <span class="top-meta">Uncategorized,<br>5,711 views</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="movie_img/movie%20img/16.webp" alt="Top 3">
+                            <div class="top-info">
+                                <a href="#" class="top-title">Broken Vows 15 (2026)</a>
+                                <span class="top-meta">Uncategorized,<br>5,592 views</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="movie_img/movie%20img/17.webp" alt="Top 4">
+                            <div class="top-info">
+                                <a href="#" class="top-title">ZZ Unscripted 5 (2026)</a>
+                                <span class="top-meta">Uncategorized,<br>4,300 views</span>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="movie_img/movie%20img/13.webp" alt="Top 5">
+                            <div class="top-info">
+                                <a href="#" class="top-title">Raw Sex Only (2026)</a>
+                                <span class="top-meta">Uncategorized, France<br>4,194 views</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <a href="#" class="scroll-top-btn"><i class="fas fa-chevron-up"></i></a>
 </body>
 </html>
