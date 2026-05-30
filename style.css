@@ -70,13 +70,18 @@ a {
     opacity: 0.8;
 }
 
+.search-bar {
+    width: 100%;
+    max-width: 300px;
+}
+
 .search-bar input {
     background-color: #444444;
     border: 1px solid #777;
     padding: 8px 15px;
     border-radius: 4px;
     color: white;
-    width: 300px;
+    width: 100%;
     outline: none;
 }
 
@@ -489,6 +494,9 @@ a {
     .content-layout {
         flex-direction: column;
     }
+    .main-content {
+        width: 100%;
+    }
     .sidebar {
         width: 100%;
     }
@@ -509,7 +517,14 @@ a {
     }
     .header-container {
         flex-direction: column;
+        align-items: stretch;
         gap: 15px;
+    }
+    .search-bar {
+        max-width: 100%;
+    }
+    .logo {
+        text-align: center;
     }
 }
 
