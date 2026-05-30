@@ -575,3 +575,127 @@ a {
         padding: 2px 4px;
     }
 }
+
+/* Watch Page specific styles */
+.watch-top-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #666;
+    margin-bottom: 15px;
+}
+.action-link {
+    background: transparent;
+    border: none;
+    color: #ccc;
+    font-size: 13px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.action-link:hover { color: white; }
+.action-link i { margin-right: 5px; }
+
+.watch-primary-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.btn-grey {
+    background: #666;
+    color: #ccc;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.btn-grey:hover { background: #777; color: white; }
+
+.movie-header-details {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--nav-green);
+    padding-bottom: 15px;
+}
+.detail-poster {
+    width: 120px;
+    height: auto;
+    border-radius: 4px;
+}
+.detail-title-area h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+.stars { color: #888; font-size: 12px; margin-bottom: 5px; }
+.votes { color: #888; font-size: 11px; }
+
+.movie-description {
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.movie-meta-info {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 20px;
+    font-family: monospace, sans-serif;
+}
+.meta-row { margin-bottom: 5px; }
+.green-link { color: var(--title-green); text-decoration: none; }
+.green-link:hover { text-decoration: underline; }
+
+.movie-tags {
+    margin-bottom: 30px;
+    font-size: 12px;
+}
+.movie-tags a {
+    color: #ccc;
+    margin-right: 8px;
+    text-decoration: none;
+    line-height: 2;
+    display: inline-block;
+}
+.movie-tags a:hover { color: var(--title-green); }
+
+.download-box {
+    background: #666;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.download-title {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.download-links-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.dl-btn {
+    background: var(--nav-green);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 3px;
+    font-size: 12px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.dl-btn:hover { background: var(--nav-green-hover); }
+
+@media (max-width: 480px) {
+    .movie-header-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
